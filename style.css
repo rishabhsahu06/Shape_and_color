@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.shape {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: tomato;
+  margin: 0 auto;
+  margin-top: 20rem;
+  animation-name: rotate-shapes;
+  animation-duration: 3s;
+  animation:ease-in-out ;
+}
+.buttons {
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+}
+button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  background-color:whitesmoke;
+  font-weight: bold;
+}
+h1{
+    text-align: center;
+margin: 10px;
+}
+#triangle {
+    width: 50px;
+    height: 50px;
+    background-color:cyan;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    margin:0 auto;
+
+}
+#circle {
+    width: 50px;
+    height: 50px;
+    background-color:red;
+    clip-path: circle(50% at 50% 50%);
+
+}
+
+
+#square {
+    width: 50px;
+    height: 50px;
+    background: yellowgreen;
+  }
+  #pentagon {
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 100px / 50px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+
+  }
+
+  #cut-diamond {
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    box-sizing: content-box;
+    position: relative;
+    margin: 20px 0 50px 0;
+  }
+  #cut-diamond:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+  }
+
+ .allshapes{
+    position: relative;
+    margin: 50px;
+    bottom: -50px;
+   
+ }
